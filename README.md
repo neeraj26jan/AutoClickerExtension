@@ -18,8 +18,32 @@ The Auto Clicker Chrome extension is designed to move the mouse around and click
   - **activeTab**: Required to interact with the current web page.
   - **tabs**: Required to access the necessary tab information and perform actions within the browser.
  
-## Installation
+## Installation Instructions
 
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/your-username/auto-clicker-extension.git
+   git clone https://github.com/neeraj26jan/AutoClickerExtension.git
+2. Open Google Chrome and go to the Extensions page by navigating to the Extensions page (chrome://extensions/).
+3. Enable **Developer Mode** by toggling the switch in the upper right corner of the Extensions page.
+4. Click **Load unpacked** and select the folder containing this repository.
+5. The extension will then be installed and ready for use.
+
+## How to Use
+
+1. Once installed, open any webpage in the browser.
+2. The extension will automatically select a random link on the page and click it.
+3. A custom cursor (`cursor.png`) will be displayed during the automatic click action to indicate that the extension is active.
+
+## Program Structure
+
+- **manifest.json**: Contains the Chrome extension's configuration, permissions, and details about content scripts.
+- **content.js**: The main JavaScript file that controls the logic for selecting random links and simulating mouse clicks on web pages.
+- **cursor.png**: The custom cursor image used while the extension is running, providing visual feedback during automatic tasks.
+
+## Minimum Requirements
+
+- **Google Chrome**: Version 88.0.0 or higher.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
