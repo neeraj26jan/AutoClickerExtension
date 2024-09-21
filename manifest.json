@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Clicker",
+    "version": "1.0",
+    "description": "Automatically moves the mouse to a random link and clicks it.",
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["cursor.png"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "minimum_chrome_version": "88.0.0"
+}
